@@ -3,21 +3,29 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Punteros")
+	fmt.Print("Punteros - Initial values\n\n")
 	fruit := "🍌"
 	var puntero *string
 	puntero = &fruit
 
-	fmt.Printf("Tipo: %T, Valor: %s, Dirección: %v\n", fruit, fruit, &fruit)
+	fmt.Printf("Valor - Tipo: %T, Valor: %s, Dirección: %v\n", fruit, fruit, &fruit)
 
-	// sobreescribiendo el puntero
-	*puntero = "🍍"
-
-	fmt.Printf("Tipo: %T, Valor: %v, Desreferenciacion: %s\n",
+	fmt.Printf("Puntero - Tipo: %T, Valor: %v, Desreferenciacion: %s\n\n",
 		puntero,
 		puntero,
 		*puntero,
 	)
+
+	// sobreescribiendo el puntero
+	*puntero = "🍍"
+
+	fmt.Printf("Puntero - Tipo: %T, Valor: %v, Desreferenciacion: %s\n",
+		puntero,
+		puntero,
+		*puntero,
+	)
+
+	fmt.Printf("Valor - Tipo: %T, Valor: %s, Dirección: %v\n\n", fruit, fruit, &fruit)
 
 	a := 3
 
