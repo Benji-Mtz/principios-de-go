@@ -36,3 +36,67 @@ func main() {
     fmt.Println("Hello World!")
 }
 ```
+## Casting en Go
+
+```go
+package main
+ 
+import "fmt"
+
+func main() {
+    var a uint8 = 255
+    var b uint16 = 1000
+
+    c := uint16(a) + b
+    fmt.Printf("Tipo: %T, Valor: %v\n", a, a) // uint16 / 1255
+}
+```
+## Operadores logicos de comparación
+
+```go
+package main
+ 
+import "fmt"
+
+func main() {
+   
+    // Operadores de comparación: >, <, ==, !=, >=, <=
+    fmt.Println(4 > 6) // false
+    fmt.Println(4 < 6) // true
+    fmt.Println(4 == 4) // true
+    fmt.Println(4 != 4) // false
+
+    // Operadores Lógicos &&, ||
+    var age uint = 33
+    fmt.Println("Es Adulto?:", age >= 18 && age <= 60)
+    fmt.Println("Es Niño o Anciano?:", age < 18 || age > 60)
+
+    // Operador lógico Unario: !
+    fmt.Println(!(4 != 4)) // true
+}
+```
+
+## Punteros
+
+```go
+package main
+ 
+import "fmt"
+
+func main() {
+   
+    // Operadores de comparación: >, <, ==, !=, >=, <=
+    fmt.Println(4 > 6) // false
+    fmt.Println(4 < 6) // true
+    fmt.Println(4 == 4) // true
+    fmt.Println(4 != 4) // false
+
+    // Operadores Lógicos &&, ||
+    var age uint = 33
+    fmt.Println("Es Adulto?:", age >= 18 && age <= 60)
+    fmt.Println("Es Niño o Anciano?:", age < 18 || age > 60)
+
+    // Operador lógico Unario: !
+    fmt.Println(!(4 != 4)) // true
+}
+```

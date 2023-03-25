@@ -1,4 +1,4 @@
-package lsgo
+package main
 
 import "fmt"
 
