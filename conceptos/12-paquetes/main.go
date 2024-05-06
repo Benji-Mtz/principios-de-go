@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Benji-Mtz/ED-Bases/12-paquetes/greet"
+	"github.com/Benji-Mtz/principios-de-go/conceptos/12-paquetes/greet"
 	"rsc.io/quote"
 )
 
