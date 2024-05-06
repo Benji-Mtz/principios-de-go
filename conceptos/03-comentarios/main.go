@@ -14,4 +14,5 @@ func main() {
 	// go doc --all
 
 	// godoc.org/github.com/user/project
+	// https://pkg.go.dev/github.com/Benji-Mtz/principios-de-go
 }

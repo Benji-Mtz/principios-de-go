@@ -28,5 +28,5 @@ func Division(dividendo, divisor int) (int, error) {
 		return 0, errors.New("No se puede dividir entre cero")
 	}
 
-	return dividendo / divisor, nil
+	return (dividendo / divisor), nil
 }
