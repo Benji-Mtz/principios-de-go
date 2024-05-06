@@ -8,7 +8,8 @@ func main() {
 	var puntero *string
 	puntero = &fruit
 
-	fmt.Printf("Tipo: %T, Valor: %s, Dirección: %v\n", fruit, fruit, &fruit)
+	fmt.Printf("Tipo: %T, Valor: %s, Dirección: %v, Dir_Puntero: %v, Puntero: %s\n", fruit, fruit, &fruit, puntero, *puntero)
+	// Tipo: string, Valor: 🍌, Dirección: 0xc000054250, Puntero: 0xc000054250
 
 	// sobreescribiendo el puntero
 	*puntero = "🍍"
